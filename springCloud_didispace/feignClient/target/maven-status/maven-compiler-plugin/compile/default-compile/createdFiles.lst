@@ -1,0 +1,3 @@
+client\FeignApplication.class
+client\controller\ConsumerController.class
+client\service\ComputeClient.class

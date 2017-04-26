@@ -16,13 +16,25 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-
     <modules>
         <module>../register</module>
         <module>../provider</module>
         <module>../consumer</module>
+        <module>../feignClient</module>
+        <module>../configServer</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Camden.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>

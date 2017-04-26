@@ -16,7 +16,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <springfox-version>2.4.0</springfox-version>
+        <springfox-version>2.2.2</springfox-version>
     </properties>
 
     <dependencies>
@@ -50,7 +50,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Brixton.RELEASE</version>
+                <version>Camden.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

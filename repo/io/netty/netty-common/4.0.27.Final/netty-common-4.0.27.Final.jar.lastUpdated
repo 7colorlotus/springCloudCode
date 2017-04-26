@@ -1,0 +1,6 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Apr 26 14:45:37 CST 2017
+@default-Nexus\ aliyun-http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1493189124530
+http\://maven.aliyun.com/nexus/content/groups/public/.error=Could not transfer artifact io.netty\:netty-common\:jar\:4.0.27.Final from/to Nexus aliyun (http\://maven.aliyun.com/nexus/content/groups/public)\: E\:\\personnal\\code\\springCloud\\repo\\io\\netty\\netty-common\\4.0.27.Final\\netty-common-4.0.27.Final.jar.part.lock (\u62D2\u7EDD\u8BBF\u95EE\u3002)
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1493189137120
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact io.netty\:netty-common\:jar\:4.0.27.Final from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org
