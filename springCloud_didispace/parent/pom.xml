@@ -22,6 +22,7 @@
         <module>../consumer</module>
         <module>../feignClient</module>
         <module>../configServer</module>
+        <module>../configClient</module>
     </modules>
 
     <dependencyManagement>
