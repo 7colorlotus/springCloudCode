@@ -17,6 +17,7 @@ public class ConsumerController {
     @Autowired
     RestTemplate restTemplate;*/
 
+    //未使用断路器版本
     @Autowired
     private ComputeService computeService;
 
