@@ -23,6 +23,7 @@
         <module>../feignClient</module>
         <module>../configServer</module>
         <module>../configClient</module>
+        <module>../zuulApiGateWay</module>
     </modules>
 
     <dependencyManagement>
