@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: password123  #如果不填写，密码是一个随机值，该值会在启动时打印出来
