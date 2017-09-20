@@ -1,6 +1,7 @@
 package com.lotus;
 
 import com.lotus.job.AsyncTask;
+import com.lotus.job.CustomAsyncTask;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,11 @@ public class ApplicationTests {
     @Autowired
 	private AsyncTask task;
 
+	@Autowired
+    private CustomAsyncTask customAsyncTask;
+
 	@Test
-	public void test() throws Exception {
+	public void testAsync() throws Exception {
 		long start = System.currentTimeMillis();
 
 		Future<String> task1 = task.doTaskOne();
@@ -26,6 +30,24 @@ public class ApplicationTests {
 
 		while (true){
 			if(task1.isDone() && task2.isDone() && task3.isDone()){
+				break;
+			}
+			Thread.sleep(1000);
+		}
+
+		long end = System.currentTimeMillis();
+		System.out.println("任务全部完成，总耗时：" + (end - start) + "毫秒");
+	}
+
+	@Test
+	public void testCustomAsync() throws Exception {
+		long start = System.currentTimeMillis();
+
+		Future<String> task1 = customAsyncTask.doTaskOne();
+		Future<String> task2 = customAsyncTask.doTaskTwo();
+
+		while (true){
+			if(task1.isDone() && task2.isDone()){
 				break;
 			}
 			Thread.sleep(1000);
