@@ -16,6 +16,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 /**
+ * 使用MockMvc模拟web容器测试web接口，不启动容器
  * Created by zhusheng on 2017/10/11 0011.
  */
 @RunWith(SpringJUnit4ClassRunner.class)

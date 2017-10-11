@@ -17,9 +17,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import java.io.Reader;
-
 /**
+ * 测试带有spring security认证的web接口
  * Created by zhusheng on 2017/10/11 0011.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
